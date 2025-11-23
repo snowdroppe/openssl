@@ -353,10 +353,10 @@ contained in the input.
 =item B<-checkend> I<arg>
 
 Without B<-multi> checks if the certificate expires within the next
-I<arg> seconds and exits non-zero if it will expire or zero if not.
+I<arg> seconds and exits nonzero if it will expire or zero if not.
 
 With B<-multi> checks if any certificate in the input will expire
-within the next I<arg> seconds and exits non-zero if any will expire
+within the next I<arg> seconds and exits nonzero if any will expire
 or zero if none will.
 
 =item B<-checkhost> I<host>
