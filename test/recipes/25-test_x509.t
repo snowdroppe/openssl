@@ -640,7 +640,7 @@ my $c_chain = "c-chain.pem";
 my $c_key = srctop_file(@certs, 'ca-key.pem');
 ok(run(app(["openssl", "x509", "-new", "-key", $c_key, "-subj", "/CN=EARLY",
             "-extfile", $extfile, "-days", "100", "-out", $c_early]))
-&&(run(app(["openssl", "x509", "-new", "-key", $c_key, "-subj", "/CN=LATE",
+&& run(app(["openssl", "x509", "-new", "-key", $c_key, "-subj", "/CN=LATE",
             "-extfile", $extfile, "-days", "200", "-out", $c_late])));
 # ok(run(app(["openssl", "x509", "-text",
 #              "-in", srctop_file('test', 'certs', 'ca-cert.pem'),
